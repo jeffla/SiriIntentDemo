@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KRF-Ok-IQn">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SiriIntentDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lGs-An-SID">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orR-2w-v9N">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-Nv-vGe">
+                                                <rect key="frame" x="8" y="8" width="398" height="44"/>
+                                                <color key="backgroundColor" red="0.02212160925" green="1" blue="0.002888324389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="XYV-SL-1nH"/>
+                                                </constraints>
+                                                <state key="normal" title="View My Usage"/>
+                                                <connections>
+                                                    <action selector="didPressViewMyUsage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNI-t5-Ac3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bQO-Nv-vGe" secondAttribute="trailing" constant="8" id="13S-lo-UWg"/>
+                                            <constraint firstItem="bQO-Nv-vGe" firstAttribute="top" secondItem="orR-2w-v9N" secondAttribute="top" constant="8" id="YgU-EI-WgP"/>
+                                            <constraint firstItem="bQO-Nv-vGe" firstAttribute="leading" secondItem="orR-2w-v9N" secondAttribute="leading" constant="8" id="fza-PI-G7w"/>
+                                            <constraint firstAttribute="bottom" secondItem="bQO-Nv-vGe" secondAttribute="bottom" constant="8" id="gcS-39-QMK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzz-Da-7W6">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlV-Uq-kw0">
+                                                <rect key="frame" x="8" y="8" width="398" height="44"/>
+                                                <color key="backgroundColor" red="0.02212160925" green="1" blue="0.002888324389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="dn2-3D-tyK"/>
+                                                </constraints>
+                                                <state key="normal" title="View My Bill"/>
+                                                <connections>
+                                                    <action selector="didPressViewMyBill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SYa-eO-87Y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xlV-Uq-kw0" firstAttribute="top" secondItem="zzz-Da-7W6" secondAttribute="top" constant="8" id="IX1-8n-N4c"/>
+                                            <constraint firstItem="xlV-Uq-kw0" firstAttribute="leading" secondItem="zzz-Da-7W6" secondAttribute="leading" constant="8" id="eyz-Kc-XOP"/>
+                                            <constraint firstAttribute="bottom" secondItem="xlV-Uq-kw0" secondAttribute="bottom" constant="8" id="lbW-G5-yE4"/>
+                                            <constraint firstAttribute="trailing" secondItem="xlV-Uq-kw0" secondAttribute="trailing" constant="8" id="zhk-UA-vVJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYq-df-1lg">
+                                        <rect key="frame" x="0.0" y="124" width="414" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xit-IE-2nN">
+                                                <rect key="frame" x="8" y="8" width="398" height="44"/>
+                                                <color key="backgroundColor" red="0.02212160925" green="1" blue="0.002888324389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="5ML-bj-tlo"/>
+                                                </constraints>
+                                                <state key="normal" title="Pay My Bill"/>
+                                                <connections>
+                                                    <action selector="didPressPayMyBill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWk-jt-PgJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Xit-IE-2nN" secondAttribute="bottom" constant="8" id="HwR-PT-chf"/>
+                                            <constraint firstItem="Xit-IE-2nN" firstAttribute="top" secondItem="QYq-df-1lg" secondAttribute="top" constant="8" id="IY6-F2-SVV"/>
+                                            <constraint firstItem="Xit-IE-2nN" firstAttribute="leading" secondItem="QYq-df-1lg" secondAttribute="leading" constant="8" id="OII-T5-1p6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xit-IE-2nN" secondAttribute="trailing" constant="8" id="gBY-yf-HHN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjN-OE-ceZ">
+                                        <rect key="frame" x="0.0" y="186" width="414" height="588"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lGs-An-SID" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LgA-YS-fBE"/>
+                            <constraint firstItem="lGs-An-SID" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TSH-gc-AEW"/>
+                            <constraint firstItem="lGs-An-SID" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WBE-lw-wRL"/>
+                            <constraint firstItem="lGs-An-SID" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="anf-6r-o7L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="maA-Xl-IaL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bfq-7U-Xki">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KRF-Ok-IQn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Guq-Zx-0H3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VG4-tD-ElI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5b-hi-7l1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="138"/>
+        </scene>
+    </scenes>
+</document>

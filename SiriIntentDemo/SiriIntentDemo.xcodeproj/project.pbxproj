@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F90840E226E5475008E1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90840D226E5475008E1E26 /* AppDelegate.swift */; };
+		1F908410226E5475008E1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90840F226E5475008E1E26 /* ViewController.swift */; };
+		1F908413226E5475008E1E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F908411226E5475008E1E26 /* Main.storyboard */; };
+		1F908415226E5476008E1E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F908414226E5476008E1E26 /* Assets.xcassets */; };
+		1F908418226E5476008E1E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F908416226E5476008E1E26 /* LaunchScreen.storyboard */; };
+		1F908429226E5497008E1E26 /* IntentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F908427226E5497008E1E26 /* IntentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F90842C226E5497008E1E26 /* IntentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F908425226E5496008E1E26 /* IntentKit.framework */; };
+		1F90842D226E5497008E1E26 /* IntentKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F908425226E5496008E1E26 /* IntentKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F908433226E5792008E1E26 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908432226E5792008E1E26 /* NSUserActivity+IntentData.swift */; };
+		1F908435226E6008008E1E26 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908434226E6008008E1E26 /* BillViewController.swift */; };
+		1F908437226E65B0008E1E26 /* BillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908436226E65B0008E1E26 /* BillView.swift */; };
+		1F908439226E8566008E1E26 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1F908438226E8566008E1E26 /* Intents.intentdefinition */; };
+		1F90843A226E85E2008E1E26 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1F908438226E8566008E1E26 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		1F908442226E8774008E1E26 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908441226E8774008E1E26 /* IntentHandler.swift */; };
+		1F90844B226E8774008E1E26 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F90844A226E8774008E1E26 /* IntentsUI.framework */; };
+		1F90844E226E8774008E1E26 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90844D226E8774008E1E26 /* IntentViewController.swift */; };
+		1F908451226E8774008E1E26 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F90844F226E8774008E1E26 /* MainInterface.storyboard */; };
+		1F908455226E8774008E1E26 /* ViewBillUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F908448226E8774008E1E26 /* ViewBillUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F908458226E8774008E1E26 /* ViewBill.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F90843F226E8774008E1E26 /* ViewBill.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F908464226E8888008E1E26 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1F908438226E8566008E1E26 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		1F908465226E8889008E1E26 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1F908438226E8566008E1E26 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		1F908468226E8969008E1E26 /* IntentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F908425226E5496008E1E26 /* IntentKit.framework */; };
+		1F90846B226E8976008E1E26 /* IntentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F908425226E5496008E1E26 /* IntentKit.framework */; };
+		1F90846E226E8C3F008E1E26 /* ViewMyBillIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90846D226E8C3F008E1E26 /* ViewMyBillIntentHandler.swift */; };
+		1F908470226EB9B3008E1E26 /* SendPaymentIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90846F226EB9B3008E1E26 /* SendPaymentIntentHandler.swift */; };
+		1F908472226EBD9D008E1E26 /* PayBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908471226EBD9C008E1E26 /* PayBillViewController.swift */; };
+		1F908476226F9F09008E1E26 /* UsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908475226F9F09008E1E26 /* UsageViewController.swift */; };
+		1F908478226F9F91008E1E26 /* ViewMyUsageIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908477226F9F91008E1E26 /* ViewMyUsageIntentHandler.swift */; };
+		1F90847A226FA077008E1E26 /* UsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F908479226FA077008E1E26 /* UsageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F90842A226E5497008E1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F908402226E5475008E1E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F908424226E5496008E1E26;
+			remoteInfo = IntentKit;
+		};
+		1F908453226E8774008E1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F908402226E5475008E1E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F908447226E8774008E1E26;
+			remoteInfo = ViewBillUI;
+		};
+		1F908456226E8774008E1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F908402226E5475008E1E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F90843E226E8774008E1E26;
+			remoteInfo = ViewBill;
+		};
+		1F908466226E8961008E1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F908402226E5475008E1E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F908424226E5496008E1E26;
+			remoteInfo = IntentKit;
+		};
+		1F908469226E8972008E1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F908402226E5475008E1E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F908424226E5496008E1E26;
+			remoteInfo = IntentKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F908431226E5497008E1E26 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F90842D226E5497008E1E26 /* IntentKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F90845F226E8774008E1E26 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F908458226E8774008E1E26 /* ViewBill.appex in Embed App Extensions */,
+				1F908455226E8774008E1E26 /* ViewBillUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F90840A226E5475008E1E26 /* SiriIntentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriIntentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F90840D226E5475008E1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F90840F226E5475008E1E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F908412226E5475008E1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F908414226E5476008E1E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F908417226E5476008E1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F908419226E5476008E1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F908425226E5496008E1E26 /* IntentKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntentKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F908427226E5497008E1E26 /* IntentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentKit.h; sourceTree = "<group>"; };
+		1F908428226E5497008E1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F908432226E5792008E1E26 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
+		1F908434226E6008008E1E26 /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		1F908436226E65B0008E1E26 /* BillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillView.swift; sourceTree = "<group>"; };
+		1F908438226E8566008E1E26 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		1F90843F226E8774008E1E26 /* ViewBill.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ViewBill.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F908441226E8774008E1E26 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		1F908443226E8774008E1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F908448226E8774008E1E26 /* ViewBillUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ViewBillUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F90844A226E8774008E1E26 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		1F90844D226E8774008E1E26 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		1F908450226E8774008E1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1F908452226E8774008E1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F90846C226E8B14008E1E26 /* SiriIntentDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriIntentDemo.entitlements; sourceTree = "<group>"; };
+		1F90846D226E8C3F008E1E26 /* ViewMyBillIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMyBillIntentHandler.swift; sourceTree = "<group>"; };
+		1F90846F226EB9B3008E1E26 /* SendPaymentIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPaymentIntentHandler.swift; sourceTree = "<group>"; };
+		1F908471226EBD9C008E1E26 /* PayBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBillViewController.swift; sourceTree = "<group>"; };
+		1F908475226F9F09008E1E26 /* UsageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageViewController.swift; sourceTree = "<group>"; };
+		1F908477226F9F91008E1E26 /* ViewMyUsageIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMyUsageIntentHandler.swift; sourceTree = "<group>"; };
+		1F908479226FA077008E1E26 /* UsageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F908407226E5475008E1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F90842C226E5497008E1E26 /* IntentKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F908422226E5496008E1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F90843C226E8774008E1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F908468226E8969008E1E26 /* IntentKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F908445226E8774008E1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F90846B226E8976008E1E26 /* IntentKit.framework in Frameworks */,
+				1F90844B226E8774008E1E26 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F908401226E5475008E1E26 = {
+			isa = PBXGroup;
+			children = (
+				1F90841F226E5482008E1E26 /* Shared */,
+				1F90840C226E5475008E1E26 /* SiriIntentDemo */,
+				1F908440226E8774008E1E26 /* ViewBill */,
+				1F90844C226E8774008E1E26 /* ViewBillUI */,
+				1F908426226E5497008E1E26 /* IntentKit */,
+				1F908449226E8774008E1E26 /* Frameworks */,
+				1F90840B226E5475008E1E26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F90840B226E5475008E1E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F90840A226E5475008E1E26 /* SiriIntentDemo.app */,
+				1F908425226E5496008E1E26 /* IntentKit.framework */,
+				1F90843F226E8774008E1E26 /* ViewBill.appex */,
+				1F908448226E8774008E1E26 /* ViewBillUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F90840C226E5475008E1E26 /* SiriIntentDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1F90846C226E8B14008E1E26 /* SiriIntentDemo.entitlements */,
+				1F90840D226E5475008E1E26 /* AppDelegate.swift */,
+				1F90840F226E5475008E1E26 /* ViewController.swift */,
+				1F908434226E6008008E1E26 /* BillViewController.swift */,
+				1F908471226EBD9C008E1E26 /* PayBillViewController.swift */,
+				1F908475226F9F09008E1E26 /* UsageViewController.swift */,
+				1F908411226E5475008E1E26 /* Main.storyboard */,
+				1F908414226E5476008E1E26 /* Assets.xcassets */,
+				1F908416226E5476008E1E26 /* LaunchScreen.storyboard */,
+				1F908419226E5476008E1E26 /* Info.plist */,
+			);
+			path = SiriIntentDemo;
+			sourceTree = "<group>";
+		};
+		1F90841F226E5482008E1E26 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1F908438226E8566008E1E26 /* Intents.intentdefinition */,
+				1F908432226E5792008E1E26 /* NSUserActivity+IntentData.swift */,
+				1F908436226E65B0008E1E26 /* BillView.swift */,
+				1F908479226FA077008E1E26 /* UsageView.swift */,
+				1F90846D226E8C3F008E1E26 /* ViewMyBillIntentHandler.swift */,
+				1F90846F226EB9B3008E1E26 /* SendPaymentIntentHandler.swift */,
+				1F908477226F9F91008E1E26 /* ViewMyUsageIntentHandler.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1F908426226E5497008E1E26 /* IntentKit */ = {
+			isa = PBXGroup;
+			children = (
+				1F908427226E5497008E1E26 /* IntentKit.h */,
+				1F908428226E5497008E1E26 /* Info.plist */,
+			);
+			path = IntentKit;
+			sourceTree = "<group>";
+		};
+		1F908440226E8774008E1E26 /* ViewBill */ = {
+			isa = PBXGroup;
+			children = (
+				1F908441226E8774008E1E26 /* IntentHandler.swift */,
+				1F908443226E8774008E1E26 /* Info.plist */,
+			);
+			path = ViewBill;
+			sourceTree = "<group>";
+		};
+		1F908449226E8774008E1E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F90844A226E8774008E1E26 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F90844C226E8774008E1E26 /* ViewBillUI */ = {
+			isa = PBXGroup;
+			children = (
+				1F90844D226E8774008E1E26 /* IntentViewController.swift */,
+				1F90844F226E8774008E1E26 /* MainInterface.storyboard */,
+				1F908452226E8774008E1E26 /* Info.plist */,
+			);
+			path = ViewBillUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F908420226E5496008E1E26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F908429226E5497008E1E26 /* IntentKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F908409226E5475008E1E26 /* SiriIntentDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F90841C226E5476008E1E26 /* Build configuration list for PBXNativeTarget "SiriIntentDemo" */;
+			buildPhases = (
+				1F908406226E5475008E1E26 /* Sources */,
+				1F908407226E5475008E1E26 /* Frameworks */,
+				1F908408226E5475008E1E26 /* Resources */,
+				1F908431226E5497008E1E26 /* Embed Frameworks */,
+				1F90845F226E8774008E1E26 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F90842B226E5497008E1E26 /* PBXTargetDependency */,
+				1F908454226E8774008E1E26 /* PBXTargetDependency */,
+				1F908457226E8774008E1E26 /* PBXTargetDependency */,
+			);
+			name = SiriIntentDemo;
+			productName = SiriIntentDemo;
+			productReference = 1F90840A226E5475008E1E26 /* SiriIntentDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F908424226E5496008E1E26 /* IntentKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F90842E226E5497008E1E26 /* Build configuration list for PBXNativeTarget "IntentKit" */;
+			buildPhases = (
+				1F908420226E5496008E1E26 /* Headers */,
+				1F908421226E5496008E1E26 /* Sources */,
+				1F908422226E5496008E1E26 /* Frameworks */,
+				1F908423226E5496008E1E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentKit;
+			productName = IntentKit;
+			productReference = 1F908425226E5496008E1E26 /* IntentKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1F90843E226E8774008E1E26 /* ViewBill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F90845C226E8774008E1E26 /* Build configuration list for PBXNativeTarget "ViewBill" */;
+			buildPhases = (
+				1F90843B226E8774008E1E26 /* Sources */,
+				1F90843C226E8774008E1E26 /* Frameworks */,
+				1F90843D226E8774008E1E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F908467226E8961008E1E26 /* PBXTargetDependency */,
+			);
+			name = ViewBill;
+			productName = ViewBill;
+			productReference = 1F90843F226E8774008E1E26 /* ViewBill.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1F908447226E8774008E1E26 /* ViewBillUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F908459226E8774008E1E26 /* Build configuration list for PBXNativeTarget "ViewBillUI" */;
+			buildPhases = (
+				1F908444226E8774008E1E26 /* Sources */,
+				1F908445226E8774008E1E26 /* Frameworks */,
+				1F908446226E8774008E1E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F90846A226E8972008E1E26 /* PBXTargetDependency */,
+			);
+			name = ViewBillUI;
+			productName = ViewBillUI;
+			productReference = 1F908448226E8774008E1E26 /* ViewBillUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F908402226E5475008E1E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jeff Lacey";
+				TargetAttributes = {
+					1F908409226E5475008E1E26 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					1F908424226E5496008E1E26 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					1F90843E226E8774008E1E26 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1F908447226E8774008E1E26 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1F908405226E5475008E1E26 /* Build configuration list for PBXProject "SiriIntentDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F908401226E5475008E1E26;
+			productRefGroup = 1F90840B226E5475008E1E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F908409226E5475008E1E26 /* SiriIntentDemo */,
+				1F908424226E5496008E1E26 /* IntentKit */,
+				1F90843E226E8774008E1E26 /* ViewBill */,
+				1F908447226E8774008E1E26 /* ViewBillUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F908408226E5475008E1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F908418226E5476008E1E26 /* LaunchScreen.storyboard in Resources */,
+				1F908415226E5476008E1E26 /* Assets.xcassets in Resources */,
+				1F908413226E5475008E1E26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F908423226E5496008E1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F90843D226E8774008E1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F908446226E8774008E1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F908451226E8774008E1E26 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F908406226E5475008E1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F908410226E5475008E1E26 /* ViewController.swift in Sources */,
+				1F90840E226E5475008E1E26 /* AppDelegate.swift in Sources */,
+				1F90843A226E85E2008E1E26 /* Intents.intentdefinition in Sources */,
+				1F908435226E6008008E1E26 /* BillViewController.swift in Sources */,
+				1F908476226F9F09008E1E26 /* UsageViewController.swift in Sources */,
+				1F908472226EBD9D008E1E26 /* PayBillViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F908421226E5496008E1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F90846E226E8C3F008E1E26 /* ViewMyBillIntentHandler.swift in Sources */,
+				1F908439226E8566008E1E26 /* Intents.intentdefinition in Sources */,
+				1F90847A226FA077008E1E26 /* UsageView.swift in Sources */,
+				1F908470226EB9B3008E1E26 /* SendPaymentIntentHandler.swift in Sources */,
+				1F908478226F9F91008E1E26 /* ViewMyUsageIntentHandler.swift in Sources */,
+				1F908433226E5792008E1E26 /* NSUserActivity+IntentData.swift in Sources */,
+				1F908437226E65B0008E1E26 /* BillView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F90843B226E8774008E1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F908464226E8888008E1E26 /* Intents.intentdefinition in Sources */,
+				1F908442226E8774008E1E26 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F908444226E8774008E1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F908465226E8889008E1E26 /* Intents.intentdefinition in Sources */,
+				1F90844E226E8774008E1E26 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F90842B226E5497008E1E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F908424226E5496008E1E26 /* IntentKit */;
+			targetProxy = 1F90842A226E5497008E1E26 /* PBXContainerItemProxy */;
+		};
+		1F908454226E8774008E1E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F908447226E8774008E1E26 /* ViewBillUI */;
+			targetProxy = 1F908453226E8774008E1E26 /* PBXContainerItemProxy */;
+		};
+		1F908457226E8774008E1E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F90843E226E8774008E1E26 /* ViewBill */;
+			targetProxy = 1F908456226E8774008E1E26 /* PBXContainerItemProxy */;
+		};
+		1F908467226E8961008E1E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F908424226E5496008E1E26 /* IntentKit */;
+			targetProxy = 1F908466226E8961008E1E26 /* PBXContainerItemProxy */;
+		};
+		1F90846A226E8972008E1E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F908424226E5496008E1E26 /* IntentKit */;
+			targetProxy = 1F908469226E8972008E1E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F908411226E5475008E1E26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F908412226E5475008E1E26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F908416226E5476008E1E26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F908417226E5476008E1E26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F90844F226E8774008E1E26 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F908450226E8774008E1E26 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F90841A226E5476008E1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F90841B226E5476008E1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F90841D226E5476008E1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriIntentDemo/SiriIntentDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				INFOPLIST_FILE = SiriIntentDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.SiriIntentDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F90841E226E5476008E1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriIntentDemo/SiriIntentDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				INFOPLIST_FILE = SiriIntentDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.SiriIntentDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F90842F226E5497008E1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntentKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.IntentKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F908430226E5497008E1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IntentKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.IntentKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F90845A226E8774008E1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				INFOPLIST_FILE = ViewBillUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.SiriIntentDemo.ViewBillUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F90845B226E8774008E1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				INFOPLIST_FILE = ViewBillUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.SiriIntentDemo.ViewBillUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F90845D226E8774008E1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				INFOPLIST_FILE = ViewBill/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.SiriIntentDemo.ViewBill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F90845E226E8774008E1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKUFUK7JT8;
+				INFOPLIST_FILE = ViewBill/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jclacey.SiriIntentDemo.ViewBill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F908405226E5475008E1E26 /* Build configuration list for PBXProject "SiriIntentDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F90841A226E5476008E1E26 /* Debug */,
+				1F90841B226E5476008E1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F90841C226E5476008E1E26 /* Build configuration list for PBXNativeTarget "SiriIntentDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F90841D226E5476008E1E26 /* Debug */,
+				1F90841E226E5476008E1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F90842E226E5497008E1E26 /* Build configuration list for PBXNativeTarget "IntentKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F90842F226E5497008E1E26 /* Debug */,
+				1F908430226E5497008E1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F908459226E8774008E1E26 /* Build configuration list for PBXNativeTarget "ViewBillUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F90845A226E8774008E1E26 /* Debug */,
+				1F90845B226E8774008E1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F90845C226E8774008E1E26 /* Build configuration list for PBXNativeTarget "ViewBill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F90845D226E8774008E1E26 /* Debug */,
+				1F90845E226E8774008E1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F908402226E5475008E1E26 /* Project object */;
+}
